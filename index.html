@@ -130,6 +130,33 @@
     border-radius:4px;
     padding:14px 16px;
   }
+  .dropoff-group{
+    margin-bottom:18px;
+  }
+  .dropoff-group:last-child{margin-bottom:0;}
+  .dropoff-label{
+    font-weight:700;
+    font-size:0.95rem;
+    color:var(--bark);
+    margin-bottom:8px;
+  }
+  .dropoff-map{
+    width:100%;
+    height:180px;
+    border:1px solid var(--line);
+    border-radius:4px;
+    overflow:hidden;
+    margin-bottom:8px;
+  }
+  .dropoff-map iframe{width:100%;height:100%;border:0;display:block;}
+  .dropoff-pin{
+    display:inline-block;
+    font-size:0.85rem;
+    font-weight:700;
+    color:var(--clay);
+    text-decoration:none;
+  }
+  .dropoff-pin:hover{text-decoration:underline;}
   .placeholder{
     color:#8a7d64;
     font-style:italic;
@@ -177,26 +204,32 @@
 
   
   
+  
+  
   <section class="loc" id="sy-river">
     <div class="loc-head">
       <div class="loc-name">SY River off Refugio</div>
     </div>
     <div class="area">Santa Ynez River, off Refugio Road, Santa Ynez</div>
     
-    <div class="map-embed">
-      <iframe src="https://www.google.com/maps?q=34.583667,-120.101436&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <a class="pin-link" href="https://www.google.com/maps?q=34.583667,-120.101436" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
-
     <div class="block">
       <h3>Getting there</h3>
-      <p>From Hwy 246, take southbound Refugio Road toward Sunstone Winery. After Sunstone, drive over the bridge crossing the river and park on the right.</p>
+      <p>From Hwy 246, take southbound Refugio Road toward Sunstone Winery. Classrooms are before and after the bridge, on the right side. For the classroom on the far side of the bridge, please park with all tires off the road and to be cafreful of the street there (no children in the road).</p>
     </div>
 
     <div class="block">
       <h3>Drop-off / pickup details</h3>
       <div class="dropoffs">
-        <p class="placeholder">Meeting spot, parking notes, and landmark to be added.</p>
+        <div class="dropoff-group">
+          <div class="dropoff-label">After Bridge</div>
+          <div class="dropoff-map"><iframe src="https://www.google.com/maps?q=34.583667,-120.101436&z=17&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <a class="dropoff-pin" href="https://www.google.com/maps?q=34.583667,-120.101436" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
+        </div>
+        <div class="dropoff-group">
+          <div class="dropoff-label">Sunstone Side</div>
+          <div class="dropoff-map"><iframe src="https://www.google.com/maps?q=34.586157,-120.100858&z=17&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <a class="dropoff-pin" href="https://www.google.com/maps?q=34.586157,-120.100858" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -240,7 +273,7 @@
 
     <div class="block">
       <h3>Getting there</h3>
-      <p>Take Figueroa Mountain Rd. past Midland and Family School. There are two parking locations (both on the right side of the street): one is right before the sharp turn/cattle guard, and one is immediately after (slightly up the hill).</p>
+      <p>Take Figueroa Mountain Rd. past Midland and Family School. After a sharp turn you will cross a cattle guard, and parking is available just after that on the right. Please do not park before you cross the cattle guard.</p>
     </div>
 
     <div class="block">
@@ -258,11 +291,6 @@
     </div>
     <div class="area">Private ranch property, Santa Ynez Valley area</div>
     <div class="callout"><strong>Please note: </strong>This is private property. Please do not visit outside of our regular scheduled time here, and don't share the exact access route publicly.</div>
-    <div class="map-embed">
-      <iframe src="https://www.google.com/maps?q=34.5947493,-120.1779504&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <a class="pin-link" href="https://www.google.com/maps?q=34.5947493,-120.1779504" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
-
     <div class="block">
       <h3>Getting there</h3>
       <p>From Hwy 246, take the turn off for Happy N Ranch and Highline Adventure. Stay on that road until you cross the river, then take the first left and follow that dirt road until there is a slight rise through a grove of oak trees. Park on the left.</p>
@@ -271,7 +299,16 @@
     <div class="block">
       <h3>Drop-off / pickup details</h3>
       <div class="dropoffs">
-        <p class="placeholder">Meeting spot, parking notes, and landmark to be added.</p>
+        <div class="dropoff-group">
+          <div class="dropoff-label">Bear Meadow</div>
+          <div class="dropoff-map"><iframe src="https://www.google.com/maps?q=34.5947493,-120.1779504&z=17&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <a class="dropoff-pin" href="https://www.google.com/maps?q=34.5947493,-120.1779504" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
+        </div>
+        <div class="dropoff-group">
+          <div class="dropoff-label">Deer Hollow</div>
+          <div class="dropoff-map"><iframe src="https://www.google.com/maps?q=34.593521,-120.168708&z=17&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <a class="dropoff-pin" href="https://www.google.com/maps?q=34.593521,-120.168708" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -325,6 +362,8 @@
       </div>
     </div>
   </section>
+
+
 
 
 
