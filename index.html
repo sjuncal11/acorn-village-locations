@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acorn Village — Classroom Locations Guide</title>
+<link rel="icon" href="https://www.acornvillage.org/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -28,10 +28,20 @@
   }
   .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px;}
   header.hero{
+    display:flex;
+    align-items:center;
+    gap:32px;
     padding:8px 0 28px;
     border-bottom:2px solid var(--line);
     margin-bottom:28px;
   }
+  .hero-logo{
+    flex:0 0 auto;
+    width:230px;
+    height:auto;
+    display:block;
+  }
+  .hero-text{min-width:0;}
   .eyebrow{
     font-size:13px;
     color:var(--moss);
@@ -43,18 +53,10 @@
     font-optical-sizing:auto;
     font-weight:500;
     font-size:2.4rem;
+    line-height:1.1;
     margin:6px 0 10px;
     color:var(--moss-dark);
   }
-  .howto{
-    background:var(--paper-warm);
-    border:1px solid var(--line);
-    border-radius:4px;
-    padding:16px 20px;
-    margin:22px 0 36px;
-    font-size:0.97rem;
-  }
-  .howto strong{color:var(--moss-dark);}
   nav.jump{
     display:flex;
     flex-wrap:wrap;
@@ -71,6 +73,7 @@
     border-radius:100px;
   }
   nav.jump a:hover{border-color:var(--ochre);}
+  nav.jump a:focus-visible{outline:2px solid var(--moss);outline-offset:2px;}
   section.loc{
     margin-bottom:56px;
     padding-top:8px;
@@ -130,6 +133,7 @@
     border-radius:4px;
     padding:14px 16px;
   }
+  .dropoffs p + p{margin-top:10px;}
   .dropoff-group{
     margin-bottom:18px;
   }
@@ -171,10 +175,6 @@
     margin-bottom:16px;
   }
   .callout strong{color:var(--clay);}
-  .backup-flag{
-    background:var(--moss-dark);
-    color:var(--paper);
-  }
   footer{
     margin-top:40px;
     padding-top:20px;
@@ -182,19 +182,27 @@
     font-size:0.85rem;
     color:#6b5f49;
   }
+  @media (max-width:560px){
+    header.hero{flex-direction:column;align-items:flex-start;gap:16px;}
+    .hero-logo{width:170px;}
+    h1{font-size:2rem;}
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="hero">
-    <div class="eyebrow">Acorn Village Forest School</div>
-    <h1>Classroom Locations Guide</h1>
+    <img class="hero-logo" src="logo.png" alt="Acorn Village logo: an oak tree whose trunk forms the letters of the word Village, with small birds perched around it" width="230" height="230">
+    <div class="hero-text">
+      <div class="eyebrow">Acorn Village Forest School</div>
+      <h1>Classroom Locations Guide</h1>
+    </div>
   </header>
 
   <nav class="jump">
-    <a href="#sy-river">SY River</a>
     <a href="#bradbury-dam">Bradbury Dam</a>
+    <a href="#sy-river">SY River</a>
     <a href="#midland-trails">Midland Trails</a>
     <a href="#hart-ranch">Hart Ranch</a>
     <a href="#nojoqui-falls">Nojoqui Falls</a>
@@ -202,19 +210,44 @@
   </nav>
 
 
-  
-  
-  
-  
+  <section class="loc" id="bradbury-dam">
+    <div class="loc-head">
+      <div class="loc-name">Bradbury Dam</div>
+    </div>
+    <div class="area">Bradbury Dam Vista Point, near Lake Cachuma, CA-154</div>
+
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps?q=34.5808798,-119.9787561&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <a class="pin-link" href="https://www.google.com/maps?q=34.5808798,-119.9787561" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
+
+    <div class="block">
+      <h3>Getting there</h3>
+      <p>Take Hwy 154 toward Lake Cachuma and look for the Bradbury Dam Vista Point turnoff. The parking lot there is good for all classroom locations.</p>
+    </div>
+
+    <div class="block">
+      <h3>Drop-off / pickup details</h3>
+      <div class="dropoffs">
+        <p>Saplings begin at 845am and they will take off down the trail shortly after that meeting at the Sweetwater sign.</p>
+        <p>The Acorns will meet you just down the trail from that sign in the enrichment classroom.</p>
+        <p>Woodpeckers will meet you on the far side of the parking lot near the Dam viewing area.</p>
+        <p>Enrichment pick up will be at Sweetwater sign for saplings and near woodpecker drop off for preschool.</p>
+        <p>At this location we still have access to water so water shoes are still great, but no swimming so bathing suits not necessary.</p>
+      </div>
+    </div>
+  </section>
+
+
   <section class="loc" id="sy-river">
     <div class="loc-head">
       <div class="loc-name">SY River off Refugio</div>
     </div>
     <div class="area">Santa Ynez River, off Refugio Road, Santa Ynez</div>
-    
+
     <div class="block">
       <h3>Getting there</h3>
-      <p>From Hwy 246, take southbound Refugio Road toward Sunstone Winery. Classrooms are before and after the bridge, on the right side. For the classroom on the far side of the bridge, please park with all tires off the road and to be cafreful of the street there (no children in the road).</p>
+      <p>From Hwy 246, take southbound Refugio Road toward Sunstone Winery. Classrooms are before and after the bridge, on the right side. For the classroom on the far side of the bridge, please park with all tires off the road and be careful of the street there (no children in the road).</p>
     </div>
 
     <div class="block">
@@ -235,37 +268,12 @@
   </section>
 
 
-  <section class="loc" id="bradbury-dam">
-    <div class="loc-head">
-      <div class="loc-name">Bradbury Dam</div>
-    </div>
-    <div class="area">Bradbury Dam Vista Point, near Lake Cachuma, CA-154</div>
-    
-    <div class="map-embed">
-      <iframe src="https://www.google.com/maps?q=34.5808798,-119.9787561&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <a class="pin-link" href="https://www.google.com/maps?q=34.5808798,-119.9787561" target="_blank" rel="noopener">Open pin in Maps &rarr;</a>
-
-    <div class="block">
-      <h3>Getting there</h3>
-      <p>Take Hwy 154 toward Lake Cachuma and look for the Bradbury Dam Vista Point turnoff. The parking lot there is good for all classroom locations.</p>
-    </div>
-
-    <div class="block">
-      <h3>Drop-off / pickup details</h3>
-      <div class="dropoffs">
-        <p class="placeholder">Meeting spot, parking notes, and landmark to be added.</p>
-      </div>
-    </div>
-  </section>
-
-
   <section class="loc" id="midland-trails">
     <div class="loc-head">
       <div class="loc-name">Midland Trails</div>
     </div>
     <div class="area">Near Midland School / Grass Mountain, Figueroa Mountain Road, Los Olivos</div>
-    
+
     <div class="map-embed">
       <iframe src="https://www.google.com/maps?q=34.7418344,-120.0617905&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -279,7 +287,7 @@
     <div class="block">
       <h3>Drop-off / pickup details</h3>
       <div class="dropoffs">
-        <p class="">The trailhead to the classrooms is across the street from the second parking area. It's the trailhead for Grass Mountain/Lover Loop. Follow that to the creek — from there classes split to different locations.</p>
+        <p>The trailhead to the classrooms is across the street from the second parking area. It's the trailhead for Grass Mountain/Lover Loop. Follow that to the creek — from there classes split to different locations.</p>
       </div>
     </div>
   </section>
@@ -319,7 +327,7 @@
       <div class="loc-name">Nojoqui Falls</div>
     </div>
     <div class="area">Nojoqui Falls County Park, 3250 Alisal Road, Solvang</div>
-    
+
     <div class="map-embed">
       <iframe src="https://www.google.com/maps?q=34.5337287,-120.177432&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -344,7 +352,7 @@
       <div class="loc-name">Hans Christian Andersen Park</div>
     </div>
     <div class="area">633 Chalk Hill Rd, Solvang</div>
-    
+
     <div class="map-embed">
       <iframe src="https://www.google.com/maps?q=34.6002578,-120.141413&z=15&t=k&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -362,10 +370,6 @@
       </div>
     </div>
   </section>
-
-
-
-
 
 
   <footer>
